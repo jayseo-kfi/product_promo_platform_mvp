@@ -1,2 +1,30 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+
+# Database
+platform.db
+*.db
+
+# User uploaded files
+uploads/
+data/
+
+# Environment / secrets
+.env
+*.env
+
+# SSH keys
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
