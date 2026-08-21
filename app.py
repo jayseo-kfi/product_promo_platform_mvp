@@ -51,7 +51,7 @@ if not app.secret_key:
     raise RuntimeError('SECRET_KEY 환경변수가 설정되지 않았습니다.')
 
 app.config.update(
-    MAX_CONTENT_LENGTH=100 * 1024 * 1024,
+    MAX_CONTENT_LENGTH=20 * 1024 * 1024,
     SESSION_COOKIE_HTTPONLY=True,
     SESSION_COOKIE_SAMESITE='Lax',
     # HTTPS 적용 후 Oracle 서버 환경변수에서 1로 설정합니다.
