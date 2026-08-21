@@ -64,14 +64,29 @@ POLICY_PRODUCTS = ['중소기업제품','기술개발제품','여성기업제품
 CERT_TYPES = ['KS 인증','KC 인증','녹색기술 인증','고효율에너지기자재 인증','환경표지 인증','신제품 인증','신기술 인증','성능인증','우수조달물품','품질경영시스템 인증','안전 관련 인증','특허 또는 실용신안','정부권장정책 이행제품','시험성적서','기타']
 
 ALLOWED_EXTENSIONS = {
+    # PDF
     'pdf',
-    'hwpx',
-    'docx',
-    'xlsx',
-    'jpg',
-    'jpeg',
-    'png',
-    'zip',
+
+    # 한글
+    'hwp', 'hwpx',
+
+    # Word
+    'doc', 'docx',
+
+    # Excel
+    'xls', 'xlsx', 'xlsm', 'csv',
+
+    # PowerPoint
+    'ppt', 'pptx',
+
+    # 텍스트
+    'txt',
+
+    # 이미지
+    'jpg', 'jpeg', 'png', 'gif', 'bmp', 'tif', 'tiff',
+
+    # 압축파일
+    'zip'
 }
 
 
