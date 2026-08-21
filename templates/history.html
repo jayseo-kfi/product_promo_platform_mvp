@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<div class="card"><h1>수정이력</h1><table><tr><th>수정일시</th><th>변경항목</th><th>수정사유</th></tr>{% for r in rows %}<tr><td>{{r.changed_at}}</td><td>{{r.changed_fields}}</td><td>{{r.reason}}</td></tr>{% else %}<tr><td colspan="3">수정이력이 없습니다.</td></tr>{% endfor %}</table></div>{% endblock %}
